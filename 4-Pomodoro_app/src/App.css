@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&family=Roboto+Mono:wght@400;700&display=swap');
+*{
+  border: 0;
+  box-sizing:border-box ;
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto Mono', monospace;
+
+}
+.light{
+  background-color: rgb(216, 216, 216);
+  color: #222;
+  border: none;
+  transition: all ease-in-out 0.5s;
+}
+.dark{
+  background-color: #222;
+  color: rgb(216, 216, 216);
+  border: none;
+  transition: all ease-in-out 0.5s;
+}
+button{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background-color: inherit;
+  color: inherit;
+  cursor: pointer;
+  transform: scale(1);
+  transition: scale ease-in-out 0.1s;
+}
+button:hover{
+  transform: scale(1.05);
+}
+button.controls{
+  background-color: inherit;
+  color: inherit;
+  cursor: pointer;
+  transform: translate(0);
+  transition: all ease-in-out 0.05s; 
+}
+button:hover.controls{
+  transform: scale(1.05);
+}
+button:active.controls{
+  transform: translate(1px,1px);
+}
+#themeToggle{
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.flex-center-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  font-size: 50px;
+}
+.flex{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  margin-top: 15vh;
+}
+#time-left{
+  font-size: 60px;
+  font-weight: 700;
+}
+#timer-label{
+  font-size: 25px;
+  text-transform: uppercase ;
+}
+#timer{
+  padding: 35px;
+  border: 4px solid;
+  border-color: inherit;
+  border-radius: 50%;
+}
+#break-length, #session-length{
+  margin-top: 2px;
+  margin-bottom: 6px;
+  font-size: 25px;
+}
+#break-label,#session-label{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+
