@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+html{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(to right top, #c2f0ff, #c3e4fd, #c9d8f6, #d0cbe9, #d5bfd9);
+  font-family: 'Lato',sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 97.7vh;
+}
+.calculator{
+  width: 400px;
+  background-color: #613D66;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  -webkit-box-shadow:0px 0px 263px 71px rgba(4,66,180,0.3),12px 12px 0px -3px rgba(9,24,52,0.4);
+  -moz-box-shadow: 0px 0px 263px 71px rgba(4,66,180,0.3),12px 12px 0px -3px rgba(9,24,52,0.4);
+  box-shadow: 0px 0px 263px 71px rgba(4,66,180,0.3),12px 12px 0px -3px rgba(9,24,52,0.4);
+  border: 1px solid rgba(255,255,255, 0.9);
+  outline: 1px solid rgba(255,255,255, 0.4);
+  
+}
+#displayVisor{
+  background-color: black;
+  color: white;
+  text-align: end;
+  margin-top: 0;
+  height: 55px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+#displayVisor p:last-of-type{
+  margin: 0;
+  font-size: 1.8em;
+  margin-top: 5px;
+  margin-right: 4px;
+}
+#display{
+  margin: 0;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-right: 4px;
+}
+#ButtonsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.2em;
+}
+.buttonDiv{
+  height: 80px;
+}
+
+button{
+  background-color: #E0E0E0;
+  font-size: large;
+  font-weight: bold;
+  justify-self: stretch;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: none;
+  animation: all ease-in-out;
+}
+button:hover{
+  background-color: #D6F5FF;
+  border: 1px solid gray;
+}
+button:active{
+  background-color: #0F2857;
+  border: 1px solid black;
+}
+div#Clear.buttonDiv{
+  grid-column: span 2;
+}
+div#Zero.buttonDiv{
+  grid-column: span 2;
+}
+div#Equals.buttonDiv{
+  grid-row: span 2;
+  height: auto;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.powerSound{
+  background-color: darkgray;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 0.5em;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  
+}
+.powerSound:hover{
+  background-color: darkred;
+}
+.on{
+  color: red;
+  border: 1px solid black;
+}
+@media (max-width:481px)  {
+  .calculator{
+    width:85vw;
+    margin: 0;
+    
+  }
+  body{
+    border: 1px solid red;
+    margin: 0;
+  }
+  .buttonDiv{
+    width: 100%;
+    height: 65.5px;
+  }
+}
+
