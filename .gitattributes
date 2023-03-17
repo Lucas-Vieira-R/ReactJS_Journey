@@ -3,3 +3,11 @@
 *.css linguist-detectable=false
 *.html linguist-detectable=false
 *.nix linguist-detectable=false
+*/*.js linguist-detectable=false
+*/*/*.js linguist-detectable=false
+*/*/*.js linguist-detectable=false
+*/*/*/*.js linguist-detectable=false
+*/*.jsx linguist-detectable=false
+*/*/*.jsx linguist-detectable=false
+*/*/*.jsx linguist-detectable=false
+*/*/*/*.jsx linguist-detectable=false
