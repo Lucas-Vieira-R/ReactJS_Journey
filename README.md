@@ -46,9 +46,10 @@ Antes de mais nada, o React é super bem documentado e eu diria que é completam
 
 #### JSX
 O react utiliza a a extensão de sintaxe JSX, que é como uma fusão de Javascript com HTML. E o JSX por si só já garante funcionalidades interessantes como por exemplo:
->   `const nome = "Lucas Vieira"`;
->   `const meuJSX = <h4>Hello {name}</h4>;`
-
+```
+const nome = "Lucas Vieira"
+const meuJSX = <h4>Hello {name}</h4>
+```
 *As chaves são utilizadas dentro do JSX para indicar que o conteúdo não é literal e sim javascript, podendo ser variáveis, funções etc...
 Se eu renderizar o componente meuJSX (são chamados de componentes), isso seria mostrado:
 >    #### Hello Lucas Vieira
