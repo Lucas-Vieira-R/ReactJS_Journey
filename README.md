@@ -7,19 +7,25 @@ Como seu princípio fundamental, o React permite a sincronização rápida de el
 ## Meus Projetos concluídos:
 ##### Esse repositório tem como um dos seus papéis mostrar todos meus projetos já realizados utilizando a biblioteca React em conjunto com outras, e o que eu aprendi desenvolvendo cada um deles. Clique no link para mais detalhes de cada projeto:
 
-####1.[Visualizador Markdown](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/1-Visualizador_Markdown)
+#### 1.[Visualizador Markdown](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/1-Visualizador_Markdown)
 &nbsp;&nbsp;&nbsp;Meu primeiro projeto em React, ainda utilizando componentes de classe. Sua funcionalidade é receber um input de texto, convertê-lo para Markdown e mostrá-lo ao usuário.
-####2.[Bateria Eletrônica](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/2-Bateria_eletronica)
+
+#### 2.[Bateria Eletrônica](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/2-Bateria_eletronica)
 &nbsp;&nbsp;&nbsp;Implementando os componentes funcionais, construí essa bateria com regulagem de volume, e toca com cliques ou teclas, mostrando o som tocado no display.
-####3.[Calculadora](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/3-Calculadora_react) 
+
+#### 3.[Calculadora](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/3-Calculadora_react) 
 &nbsp;&nbsp;&nbsp;Um projeto mais limpo e modularizado, com varios componentes. Uma caluladora completamente funcional, com função de sons ao teclar. 
-####4.[Relógio Pomodoro](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/4-Pomodoro_app)
+
+#### 4.[Relógio Pomodoro](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/4-Pomodoro_app)
 &nbsp;&nbsp;&nbsp;Com toda certeza o projeto que eu mais gostei de desenvolver, um App Pomodoro ajustável completamente funcional, com dark/light mode implementado e animações. Me introduziu ao Context API para evitar Prop Drilling e deixar tudo mais organizado.
-####5.[Gerenciamento de Equipes](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/5-Gerenciamento_equipes)
+
+#### 5.[Gerenciamento de Equipes](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/5-Gerenciamento_equipes)
 &nbsp;&nbsp;&nbsp;Um projeto simples, mais para a prática onde consolidei as funcionalidades básicas do react e me introduziu ao React Router.
-####6.[Portal de Receitas](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/6-Portal_receitas)
+
+#### 6.[Portal de Receitas](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/6-Portal_receitas)
 &nbsp;&nbsp;&nbsp;Construído de maneira completamente dinâmica através de dados de uma API, esse projeto também foi divertido de connstruir, utilizando a biblioteca Axios para o consumo da API de receitas.
-####7.[Portal Financeiro](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/7-Portal_financeiro)
+
+#### 7.[Portal Financeiro](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/7-Portal_financeiro)
 &nbsp;&nbsp;&nbsp;Uma caixa de pesquisas para buscar ações através de uma API. Uma tabela com os dados de ações escolhidas pelo usuário que persiste no Local Storage e um roteamento para outra página com um gráfico do determinado ativo. Um projeto desafiador onde consolidei tudo o que aprendi nos projetos acima, juntando tudo em um só projeto.  
   
 
