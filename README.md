@@ -1,5 +1,6 @@
 
-     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+          
           
 #  React.JS
 O ReactJS é uma biblioteca Javascript para a criação rápida e dinâmica de interfaces de usuário. Prometendo agilizar o processo de tornar interfaces dinâmicas, o React dominou o mercado da tecnologia por ser prático, rápido de aprender e escalável, por permitir a reutilização de componentes.
