@@ -18,9 +18,12 @@ Dentro do evento `onchange()` passamos uma função definida, `handleChange(even
 
 Saber construir inputs controlados e lidar com eventos e states com o React é uma base usada basicamente em todo projeto dinâmico, e nesse projeto consolidei algo que usaria em todos os outros. (E eu lembro que foi até que um pouco complexo quando o fiz, hoje em dia isso já é feijão com arroz kkkk) (Sério eu fui parar no stackoverflow quando ele ainda não era extremamente tóxico para iniciantes como é hoje).
 
-**Um detalhe importante é esse `dangerouslySetInnerHTML` que acaba se tornando uma vulnerabilidade já que codigo malicioso pode ser passado pelo cliente, hoje eu trataria o input antes de passá-lo para a função `marked.parse()`*.
+*_Um detalhe importante é esse `dangerouslySetInnerHTML` que acaba se tornando uma vulnerabilidade já que codigo malicioso pode ser passado pelo cliente, hoje eu trataria o input antes de passá-lo para a função `marked.parse()`_.
 
 Mas enfim esse foi meu primeiro projeto e eu lembro de ter ficado tremendamente feliz com o resultado, ah a mágica do React!!
+
+*Você pode acessar uma versão live do projeto no meu Codepen abaixo:*
+>**[->Visualizador Markdown<-](https://codepen.io/jimcarey08/full/JjZEBZv)**
 
 
 ## O Design:  
