@@ -36,7 +36,7 @@ Como seu princípio fundamental, o React permite a sincronização rápida de el
 
 
   
-![](.\img.png)
+![alt](img.png)
 
 ### Veja os projetos em sua máquina:
 *Você pode clonar esse repósitorio para rodar os projetos no seu ambiente local, basta abrir um terminal na pasta do projeto que quer visualizar e seguir os passos:*  
