@@ -27,8 +27,16 @@ Como seu princípio fundamental, o React permite a sincronização rápida de el
 
 #### 7.[Portal Financeiro](https://github.com/Lucas-Vieira-R/ReactJS_Journey/tree/main/7-Portal_financeiro)
 &nbsp;&nbsp;&nbsp;Uma caixa de pesquisas para buscar ações através de uma API. Uma tabela com os dados de ações escolhidas pelo usuário que persiste no Local Storage e um roteamento para outra página com um gráfico do determinado ativo. Um projeto desafiador onde consolidei tudo o que aprendi nos projetos acima, juntando tudo em um só projeto.  
-  
 
+  
+  ---
+
+  
+  ---
+
+
+  
+![](.\img.png)
 
 ### Veja os projetos em sua máquina:
 *Você pode clonar esse repósitorio para rodar os projetos no seu ambiente local, basta abrir um terminal na pasta do projeto que quer visualizar e seguir os passos:*  
