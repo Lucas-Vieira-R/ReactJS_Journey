@@ -1,2 +1,5 @@
-*.jsx linguist-vendored
-*.css linguist-vendored
+*.js linguist-detectable=false
+*.jsx linguist-detectable=false
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.nix linguist-detectable=false
