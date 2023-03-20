@@ -1,17 +1,52 @@
-# React Drum Machine
-## Project for the Frontend libraries certification of FreeCodeCamp -> https://www.freecodecamp.org/portuguese/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-drum-machine
-### To complete the project you must build your own drum using some of the libraries teached on the course, like Bootstrap, SASS, React, Redux or JQuery, use the CDN link to implement tests, test it, and pass the 8 tests that are based on the user stories.
+# Bateria Eletrônica React
 
-#### * You can see the user stories that are tested on the live page of the project on the tests menu or on the link above.
-
----
-
-I built the project using **React** and the `useState()` hook to display the sound lively. Also used the Vite tool to help and improve the development. The project is very straightforward, it have a `ButtonsPad` component wich renders the buttons of the drum, some functions to handle `onClick()` and `handleKey()` to play the sound and a range input to set the volume of the sound playing. The styling was made using pure CSS with the help of some online tools like [MagicPattern](https://www.magicpattern.design/tools/css-backgrounds) and Box Shadow generator. Also some JS function to animate the buttons on click.
 ![Screenshot](fcc_drum.png)
 
----
-This was a fun project to make, learn a lot about the `useState()` hook to functional components cause i leraned React the old school way, with class components. I also worked a lot with DOM manipulation and console debugging. With this project i started to think in a React way, more than in a JS vanilla way.
+Neste projeto foi utilizado o Vite para inicilizar o template básico, e agora sim podemos dizer que é um verdadeiro project react, com direito a build e tudo mais!!
+O vite é uma ferramenta para gerar estrutura de código bem popular (e principalmente, rápida) podendo gerar templates para React, Vue, Angular etc...
 
----
-#### The app was deployed with Vercel, and you can check it down below:
-<span><a href="https://drum-machine-ngky7x5sp-lucas-vieira-r.vercel.app" target="_blank">Here</a></span>
+Esse projeto é uma bateria eletronica com 9 botões e um slider para regular o volume dos sons tocados e um display que mostra a descrição do audio tocado.
+
+Sobre a estrutura do código em si, utilizei agora componentes funcionais e os hooks `useState()` para ter a mesma funcionalidade de um componente de classe! Definitivamente um grande avanço no aprendizado, por diminuir o boilerplate de código a ser digitado, além de deixar mais organizado e limpo!  
+
+Também comecei a tentar modularizar o código em componentes mas ainda sem muita prática!
+
+O projeto consiste em um componente `<ButtonsPads />` com 9 botões cada qual com seus events handler Onclick que chama uma função passada como uma prop da raiz App.jsx que toca a tag `<audio>` filha do botão clicado, além de pegar o valor do slider de volume para definir o volume do som, chamar uma outra função para mudar o estilo do botão temporariamente e definir o display com a descriçao do audio, através de um state `description`:
+```
+  function play(e) {
+    let volume = document.getElementById('volume');
+    e.target.firstElementChild.volume = parseFloat(volume.value) / 100
+    e.target.firstElementChild.play();
+    setDescrition(e.target.id);
+    changeClass(e.target);
+  }
+```
+
+Também é implementada o listener de evento em keydown, já que cada botão e audio tem uma tecla respectiva no teclado. Para essa funcionalidade lembro de ter encontrado bastante dificuldade para implementá-la, mas encontrei a solução ao fazer um loop para todos os audios ao chamar a função, que procura o ID do audio (que é a string da tecla) e compara com a tecla pressionada, caso seja,  o respectivo audio é tocado, o estilo é acionado e o state atualizado.
+Uma tag audio:
+>`<audio src='https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3' className='clip' id='Q'>`
+
+A função:
+>```
+>  function handleKey(e) {
+>    let volume = document.getElementById('volume');
+>    const keyPressed = e.key.toUpperCase()
+>    const audios = document.querySelectorAll('audio.clip')
+>    audios.forEach(audio => keyPressed === audio.id ? audio.volume = parseFloat(volume.value) / 100 : null)
+>    audios.forEach(audio => keyPressed === audio.id ? audio.play() : null)
+ >   audios.forEach(audio => keyPressed === audio.id ? setDescrition(audio.parentElement.id) : null)
+>
+>    audios.forEach(audio => keyPressed === audio.id ? changeClass(audio.parentElement) : null)
+>
+>  }
+>```
+
+Um detalhe importante é que primeiramente eu tentava adicionar o listener keydown em cada botão, mas o foco do cliente atrapalhava completamente o evento, já que eu lidava com `event.target` por exemplo. A solução foi colocar esse listener no próprio `document`, onde independente do foco, ao fazer um loop testando cada audio, não haveria problema de execução no som!!
+
+![Screenshot](drum.gif)
+
+Confesso que na época lembro desse projeto ter me dado dor de cabeça e me deixou desanimado (principalmente quando tentava adicionar essa funcionalidade `keydown` e não conseguia), mas definitivamente foi um grande degrau no meu aprendizado, por lidar com uma estrutura de código diferente, event handler e targets onde não havia prática (a parte do `useState` foi molezinha). Mesmo também sendo um projeto simples, definitivamente solidificou muito aprendizado, e hoje lidar com os mais diferentes tipos de eventos também pe arroz com feijão!
+
+
+#### O app está disponivel online no vercel para quem quiser testar live:
+<span><a href="https://drum-machine-ngky7x5sp-lucas-vieira-r.vercel.app" target="_blank">Projeto Live</a></span>
