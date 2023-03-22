@@ -1,10 +1,10 @@
 const Teams = ({ selectedTeam, handleTeamSelectionChange }) => {
   return (
     <select className='form-select form-select-lg' value={selectedTeam} onChange={handleTeamSelectionChange}>
-      <option value='TeamA'>TeamA</option>
-      <option value='TeamB'>TeamB</option>
-      <option value='TeamC'>TeamC</option>
-      <option value='TeamD'>TeamD</option>
+      <option value='TeamA'>DevTeam</option>
+      <option value='TeamB'>DesignTeam</option>
+      <option value='TeamC'>OperationsTeam</option>
+      <option value='TeamD'>MarketingTeam</option>
     </select>
   )
 }

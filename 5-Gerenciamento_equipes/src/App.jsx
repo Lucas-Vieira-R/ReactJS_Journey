@@ -18,84 +18,96 @@ export default function App() {
     fullName: "Bob Jones",
     designation: "JavaScript Developer",
     gender: "male",
-    teamName: "TeamA"
+    teamName: "TeamA",
+    src: "./src/imgs/man1.png"
   },
   {
     id: 2,
     fullName: "Jill Bailey",
     designation: "Node Developer",
     gender: "female",
-    teamName: "TeamA"
+    teamName: "TeamA",
+    src: "./src/imgs/woman1.png"
   },
   {
     id: 3,
     fullName: "Gail Shepherd",
     designation: "Java Developer",
     gender: "female",
-    teamName: "TeamA"
+    teamName: "TeamA",
+    src: "./src/imgs/woman2.png"
   },
   {
     id: 4,
     fullName: "Sam Reynolds",
     designation: "React Developer",
     gender: "male",
-    teamName: "TeamB"
+    teamName: "TeamB",
+    src: "./src/imgs/man2.png"
   },
   {
     id: 5,
     fullName: "David Henry",
     designation: "DotNet Developer",
     gender: "male",
-    teamName: "TeamB"
+    teamName: "TeamB",
+    src: "./src/imgs/man3.png"
   },
   {
     id: 6,
     fullName: "Sarah Blake",
     designation: "SQL Server DBA",
     gender: "female",
-    teamName: "TeamB"
+    teamName: "TeamB",
+    src: "./src/imgs/woman3.png"
   },
   {
     id: 7,
     fullName: "James Bennet",
     designation: "Angular Developer",
     gender: "male",
-    teamName: "TeamC"
+    teamName: "TeamC",
+    src: "./src/imgs/man4.png"
   },
   {
     id: 8,
     fullName: "Jessica Faye",
     designation: "API Developer",
     gender: "female",
-    teamName: "TeamC"
+    teamName: "TeamC",
+    src: "./src/imgs/woman4.png"
   },
   {
     id: 9,
     fullName: "Lita Stone",
     designation: "C++ Developer",
     gender: "female",
-    teamName: "TeamC"
+    teamName: "TeamC",
+    src: "./src/imgs/woman2.png"
   },
   {
     id: 10,
     fullName: "Daniel Young",
     designation: "Python Developer",
     gender: "male",
-    teamName: "TeamD"
+    teamName: "TeamD",
+    src: "./src/imgs/man1.png"
   },
   {
     id: 11,
     fullName: "Adrian Jacobs",
     designation: "Vue Developer",
     gender: "male",
-    teamName: "TeamD"
+    teamName: "TeamD",
+    src: "./src/imgs/man3.png"
   },
   {
     id: 12,
     fullName: "Devin Monroe",
     designation: "Graphic Designer",
     gender: "male",
-    teamName: "TeamD"
+    teamName: "TeamD",
+    src: "./src/imgs/man3.png"
   }])
 
   useEffect(() => {

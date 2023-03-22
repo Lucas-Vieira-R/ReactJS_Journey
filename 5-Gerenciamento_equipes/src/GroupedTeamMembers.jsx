@@ -29,6 +29,19 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
     setGroupedData(transformedGroupData)
     setTeam(e.currentTarget.id)
   }
+  function handleSelectedTeam(team){
+    switch(team){
+      case "TeamA":
+        return "Development Team"
+      case "TeamB":
+        return "Design Team"
+      case "TeamC":
+        return "Operations Team"
+      case "TeamD":
+        return "Marketing Team"
+    }
+
+  }
 
   return (
     <main className='container'>
@@ -36,7 +49,7 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
         groupedEmployees.map((item) => {
           return (
             <div key={item.team} className='card mt-2' style={{ cursor: 'pointer' }}>
-              <h4 id={item.team} className='card-header text-secondary bg-white' onClick={handleTeamClick}>Team Name: {item.team}</h4>
+              <h4 id={item.team} className='card-header text-secondary bg-white' onClick={handleTeamClick}>Team Name: {handleSelectedTeam(item.team)}</h4>
               <div id={'collapse_' + item.team} className={item.collapsed === true ? 'collapse' : ''}>
                 <hr />
                 {
