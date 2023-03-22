@@ -72,3 +72,6 @@ Com esse projeto meu aprendizado principal foi a introdução ao React Router e 
 
 Foi sim um grande desafio lidar com tantos eventos diferentes, mas graças ao grande poder do React, no final tudo se termina de maneira simples e fácil de entender!
 
+Veja esse projeto live abaixo:
+[Live](https://gerenciamento-equipes-epiuwkw7k-lucas-vieira-r.vercel.app)
+
