@@ -75,3 +75,5 @@ Foi sim um grande desafio lidar com tantos eventos diferentes, mas graças ao gr
 Veja esse projeto live abaixo:
 [Live](https://gerenciamento-equipes-epiuwkw7k-lucas-vieira-r.vercel.app)
 
+![gif](img/teams.gif)
+
