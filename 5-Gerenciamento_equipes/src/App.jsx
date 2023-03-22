@@ -8,6 +8,14 @@ import GroupedTeamMembers from './GroupedTeamMembers';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Nav from './Nav'
 import NotFound from './NotFound'
+import man1 from './imgs/man1.png';
+import man2 from './imgs/man2.png';
+import man3 from './imgs/man3.png';
+import man4 from './imgs/man4.png';
+import woman1 from './imgs/woman1.png';
+import woman2 from './imgs/woman2.png';
+import woman3 from './imgs/woman3.png';
+import woman4 from './imgs/woman4.png';
 
 
 export default function App() {
@@ -19,7 +27,7 @@ export default function App() {
     designation: "JavaScript Developer",
     gender: "male",
     teamName: "TeamA",
-    src: "./src/imgs/man1.png"
+    src: man1
   },
   {
     id: 2,
@@ -27,7 +35,7 @@ export default function App() {
     designation: "Node Developer",
     gender: "female",
     teamName: "TeamA",
-    src: "./src/imgs/woman1.png"
+    src: woman1
   },
   {
     id: 3,
@@ -35,7 +43,7 @@ export default function App() {
     designation: "Java Developer",
     gender: "female",
     teamName: "TeamA",
-    src: "./src/imgs/woman2.png"
+    src: woman2
   },
   {
     id: 4,
@@ -43,7 +51,7 @@ export default function App() {
     designation: "React Developer",
     gender: "male",
     teamName: "TeamB",
-    src: "./src/imgs/man2.png"
+    src: man2
   },
   {
     id: 5,
@@ -51,7 +59,7 @@ export default function App() {
     designation: "DotNet Developer",
     gender: "male",
     teamName: "TeamB",
-    src: "./src/imgs/man3.png"
+    src: man3
   },
   {
     id: 6,
@@ -59,7 +67,7 @@ export default function App() {
     designation: "SQL Server DBA",
     gender: "female",
     teamName: "TeamB",
-    src: "./src/imgs/woman3.png"
+    src: woman3
   },
   {
     id: 7,
@@ -67,7 +75,7 @@ export default function App() {
     designation: "Angular Developer",
     gender: "male",
     teamName: "TeamC",
-    src: "./src/imgs/man4.png"
+    src: man4
   },
   {
     id: 8,
@@ -75,7 +83,7 @@ export default function App() {
     designation: "API Developer",
     gender: "female",
     teamName: "TeamC",
-    src: "./src/imgs/woman4.png"
+    src: woman4
   },
   {
     id: 9,
@@ -83,7 +91,7 @@ export default function App() {
     designation: "C++ Developer",
     gender: "female",
     teamName: "TeamC",
-    src: "./src/imgs/woman2.png"
+    src: woman2
   },
   {
     id: 10,
@@ -91,7 +99,7 @@ export default function App() {
     designation: "Python Developer",
     gender: "male",
     teamName: "TeamD",
-    src: "./src/imgs/man1.png"
+    src: man1
   },
   {
     id: 11,
@@ -99,7 +107,7 @@ export default function App() {
     designation: "Vue Developer",
     gender: "male",
     teamName: "TeamD",
-    src: "./src/imgs/man3.png"
+    src: man3
   },
   {
     id: 12,
@@ -107,7 +115,7 @@ export default function App() {
     designation: "Graphic Designer",
     gender: "male",
     teamName: "TeamD",
-    src: "./src/imgs/man3.png"
+    src: man3
   }])
 
   useEffect(() => {
