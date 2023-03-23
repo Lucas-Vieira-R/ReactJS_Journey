@@ -5,6 +5,8 @@ As receitas são fornecidas pela API [Meals DB](https://www.themealdb.com/api.ph
 
 A grande novidade nesse projeto foi justamente o consumo da API! Nesse caso escolhi e aprendi mais sobre a biblioteca Axios, que realmente facilita o consumod e API com parametros. Anteriormente já havia utilzado o método `fecth()` com AJAX para consumir uma API, e em comparação o Axios realmente facilita nossa vida como veremos em breve.
 
+![img](img/receitas.png)
+
 Mesmo esse projeto não possuindo tantos componetes, ainda implemente a Context API para organizar toda a lógica de usabilidade e também do consumo de API.
 
 Para o componente principal, com os cards de cada receita, primeiramente consumi o endpoint de pesquisa da API `https://www.themealdb.com/api/json/v1/1/search.php?s=` com o parametro `s` vazio. ( E aqui você já imagina também como vai funcionar o componente de pesquisa). Com o axios fica assim:
@@ -65,4 +67,9 @@ No Modal para simplificar as coisas, utilizei as classes do bootstrap, e dois st
 Gostei demais de desenvolver esse projeto principalmente por construir a página dinamicamente através da API e dos dados consumidos por ela.
 
 Consumir API com o axios e trabalhar com os dados recebidos é uma habilidade tremendamente essencial para um desenvolvedor, e saber fazer isso já de cabeça é um grande passo para a formação do mesmo.
+
+Deploy:
+[Portal Receitas](https://portal-receitas-git-main-lucas-vieira-r.vercel.app)
+
+![gif](img/recipes.gif)
 
