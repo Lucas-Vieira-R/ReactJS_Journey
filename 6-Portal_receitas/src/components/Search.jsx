@@ -24,9 +24,9 @@ const Search = () => {
   return (
     <header className="search-container">
       <form onSubmit={handleSubmit}>
-        <input type='text' onChange={handleChange} value={text} placeholder="type favorite meal" className="form-input" />
-        <button type="submit" className="btn">Search</button>
-        <button type="button" onClick={handleRandomMeal} className="btn btn-hipster">Random meal</button>
+        <input type='text' onChange={handleChange} value={text} placeholder="digite sua receita favorita" className="form-input" />
+        <button type="submit" className="btn">Pesquisar</button>
+        <button type="button" onClick={handleRandomMeal} className="btn btn-hipster">Receita aleatória</button>
       </form>
     </header>
   )

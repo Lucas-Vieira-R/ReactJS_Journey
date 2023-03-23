@@ -10,7 +10,7 @@ export default function App() {
 
   return (
     <main>
-      <h1 className='title'>Meals APP FreeCodeCamp React Course</h1>
+      <h1 className='title'>Portal de Receitas</h1>
       <Search />
       {favorites.length > 0 && <Favorites />}
       <Meals />
