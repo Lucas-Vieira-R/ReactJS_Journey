@@ -2,6 +2,8 @@
 
 ### Um projeto onde você pode se inteirar sobre os dados das suas ações de escolha, com um mecanismo de busca e páginas com mais informações detalhadas sobre a ação, além de um gráfico por periodo de tempo também selecionado pelo usuario.
 
+![overview](img/overview.png)
+
 Esse Projeto consome a API [Finnhub](https://finnhub.io) para requisitar os dados das ações, e me fez aprofundar com a biblioteca axios além da bilbioteca React Router!
 
 Para as requisições, já que ia consumir diversas rotas dessa API, resolvi modulizar a função da API, que com a biblioteca axios e suas funcionalidades de parametros tornaria tudo mais fácil:
@@ -38,7 +40,7 @@ Fiz o uso também da Context API para definit um state das ações que o usuári
 
 ```
 Usei o React Router para definir o roteamento de duas páginas, a página principal, e a página específica de cada ação, onde passo como parametro a sigla dele, para o consumo de mais dados daquela ação específica com a função `useParam()` do react router.
-Dentro dessa página utilizei a biblioteca ApexCharts para construir um gráfico com os dados obtidos da API, após uma formatação:
+Dentro dessa página utilizei a biblioteca **ApexCharts** para construir um gráfico com os dados obtidos da API, após uma formatação:
 
 ```
   useEffect(() => {
@@ -94,6 +96,9 @@ Dentro dessa página utilizei a biblioteca ApexCharts para construir um gráfico
   }, [symbol])
 ```
 E é simples assim construir um gráfico histograma com o ApexCharts.
+
+![graph](img/stock.png)
+
 Para o roteamento, ao invés de usar o componente `<Link />`, utilizei a função `navigate()`, facilitando o uso de parametros, para o acesso da API subsequente.
 
 Para o mecanismo de pesquisa que autocompleta com sugestões, uitlizei as classes collapse do bootstrap juntamente com uma lógica de checagem de um input controlado, que chama uma rota da API com o state como parametro, e retorna os matches da pesquisa em uma lista.
@@ -142,6 +147,12 @@ Para o mecanismo de pesquisa que autocompleta com sugestões, uitlizei as classe
 ```
 
 Aprender mais funcionalidades da biblioteca Axios e como trabalhar com parametros, assim como aprender mais funções do react router, também trabalhando com parametros foi uma experiencia inestimavel, e além disso colocar todos os outros conceitos do react em prática, como hooks, entender o ciclo de vida etc... tudo isso colabora para meu aprendizado como desenvolvedor e espero que possa colaborar com você também. Aprender a trabalhar com nocas bibliotecas e aprende-las com suas documentações ajuda tremendamente a ter o famoso _Big Picture_ das aplicações web.
+
+![gif](img/stocks.gif)
+
+Voce pode ver esse Projeto em produção no link abaixo:
+
+[Portal financeiro]()
 
 
 
